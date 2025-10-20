@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        a 태그 : 어떤 링크로 이동하는 태그
+        href 속성 : 이동할 경로
+
+        target 속성
+            _blank : 새창
+            _self : 현재창
+    -->
+
+    <a href="https://www.naver.com" target="_blank" title="네이버 링크">네이버 이동</a>
+    <br>
+    <a href="https://www.google.com" target="_self" title="구글 링크">구글로 이동</a>
+    <!-- 
+        blank는 새창 / self는 현재창 (만약 self 속성이여도 Ctrl+왼클릭 하면 새창으로 뜸)
+    -->
+    <br>
+    <a href="./tag03.html" target="_self">tag03 파일로 이동</a>
+    <br><br>
+    <!-- 화면에 이미지 표시 : img 태그 -->
+
+    <!-- 외부 이미지 링크 주소 -->
+    <img src="https://static.coupangcdn.com/ua/cmg_paperboy/image/1759514630062/C3-PC.jpg" alt="아이폰 케이스">
+    <img src="./iphone_01.png" alt="아이폰" width="250" height="450"> <!-- 현재 파일과 동일한 경로 -->
+    <img src="./img/iphone_02.png" alt="스크린" width="150" height="150"> <!-- 하위 폴더 경로 -->
+    <img src="../../images/iphone_03.png"> <!-- 상위 다른 폴더 경로 ../ = cd .. -->
+
+    <br><br>
+
+    <a href="https://shop.coupang.com/spigen?source=brandstore_display_ads&platform=p&brandId=0&btcEnableForce=false">
+        <img src="../../images/iphone_04.png" alt="">
+    </a>
+
+</body>
+</html>
