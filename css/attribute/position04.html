@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            /* 마우스 휠용  */
+            height: 4000px; 
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+
+        .red-box {
+            background-color: red;
+
+        }
+
+        .green-box {
+            background-color: green;
+            /* position: fixed; */
+            top: 200px;
+            left: 250px;
+        }
+
+        .blue-box {
+            background-color: blue;
+        }
+
+        .top-box {
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            position: fixed;
+            right: 50px;
+            bottom: 100px;
+        }
+
+        .navbar {
+            height: 100px;
+            background-color: lightblue;
+            
+            /* sticky 사용 시 스크롤해도 남아있음 */
+            position: sticky;
+            top: 50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+
+    <div class="navbar"></div>
+
+    <div class="top-box">맨위로버튼^</div>
+
+</body>
+
+</html>
