@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 전체박스 가로 600px , 가운데 정렬
+- 내부 요소 박스 가로 300px, 테두리 검정색
+- 이미지 사이즈 가로 150px (가로길이만 설정! 세로는 비율 그대로)
+- 글자는 Lorem 자동완성
+*이미지는 보유한 이미지 아무거나 사용 가능 -->
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .totalbox {
+            width: 600px;
+            margin:0 auto;
+        }
+
+        .inbox {
+            width: 300px;
+            height: 250px;
+            background-color: lightgray;
+            float: left;
+            border: 1px solid black;
+        }
+
+        .img-box {
+            width: 150px;
+            float: left;
+        }
+
+
+        .text-box {
+            width: 50%;
+            height: 250px;
+            background-color: lightgray;
+            float: left;
+            border: 1px solid black;
+        }
+
+        .totalbox::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="totalbox">
+        <div class="inbox">
+            <img class="img-box" src="../image/ocean.jpg">
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ipsum, ea omnis explicabo, cumque at ratione ad natus, commodi blanditiis fugit veritatis? Tempore pariatur asperiores esse culpa facere vitae quos.</p>
+        </div>
+    
+        <div class="inbox">
+            <img class="img-box" src="../image/ocean.jpg">
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ipsum, ea omnis explicabo, cumque at ratione ad natus, commodi blanditiis fugit veritatis? Tempore pariatur asperiores esse culpa facere vitae quos.</p>
+        </div>
+    </div>
+</body>
+</html>
