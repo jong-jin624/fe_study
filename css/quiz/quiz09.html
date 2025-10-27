@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 405px;
+            background-color: lightgray;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            border: 1px solid black;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: paused;
+        }
+        
+        .redb {
+            background-color: red;
+            animation-name: ani1;
+        }
+
+        .blueb {
+            background-color: blue;
+            animation-name: ani2;
+        }
+
+        .blackb {
+            background-color: black;
+            animation-name: ani3;
+        }
+
+        .greenb {
+            background-color: green;
+            animation-name: ani4;
+            float: left;
+        }
+
+        .yellowb {
+            background-color: yellow;
+            animation-name: ani5;
+            float: left;
+        }
+
+        .container::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .container:hover .redb, .blueb, .blackb {
+            animation-play-state: running;
+        }
+
+        .greenb:hover {
+            animation-play-state: running;
+        }
+
+        .yellowb:hover {
+            animation-play-state: running;
+        }
+
+
+        @keyframes ani1 {
+            0% {
+                background-color: red;
+                width: 100px;
+            }
+            100% {
+                background-color: red;
+                width: 400px;
+            }
+        }
+
+        @keyframes ani2 {
+            0% {
+                background-color: blue;
+                width: 100px;
+            }
+            100% {
+                background-color: purple;
+                width: 100px;
+            }
+        }
+
+        @keyframes ani3 {
+            0% {
+                background-color: black;
+                width: 100px;
+            }
+            100% {
+                background-color: black;
+                width: 200px;
+            }
+        }
+
+        @keyframes ani4 {
+            0% {
+                background-color: green;
+                width: 100px;
+                border: 0px solid red;
+            }
+            100% {
+                background-color: green;
+                width: 100px;
+                border: 15px solid red;
+            }
+        }
+
+        @keyframes ani5 {
+            0% {
+                background-color: yellow;
+                width: 100px;
+                border: 0px solid red;
+            }
+            100% {
+                background-color: yellow;
+                width: 100px;
+                border: 15px solid red;
+            }
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box redb"></div>
+        <div class="box blueb"></div>
+        <div class="box blackb"></div>
+        <div class="box greenb"></div>
+        <div class="box yellowb"></div>
+    </div>
+
+
+</body>
+
+</html>
