@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 4000px;
+        }
+
+        .sign-up {
+            width: 330px;
+            position: fixed;
+            padding: 25px;
+            border: 1px solid slategrey;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: black;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .menu {
+            width: 280px;
+            border-bottom: 1px solid silver;
+            margin-bottom: 25px;
+            display: flex;
+        }
+
+        .log {
+            padding: 5px 0px;
+            cursor: pointer;
+            color: rgba(182, 175, 175, 0.638);
+            margin-left: 1px;
+            margin-right: 20px;
+        }
+
+        .sign {
+            padding: 5px 0px;
+            color: rgb(59, 124, 235);
+            
+        }
+
+        input {
+            width: 280px;
+            height: 40px;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            border-radius: 0;
+            border: 1px solid slategrey;
+        }
+
+        input::placeholder {
+            font-size: 16px;
+            opacity: 0.3;
+        }
+
+        .agree {
+            display: flex;
+            margin-bottom: 10px;
+            margin-left: 3px;
+            align-items: center;
+        }
+
+        .agree input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            border: 1px solid rgba(96, 80, 80, 0.345);
+            margin-right: 5px;
+        }
+
+        div line .underline {
+            text-decoration: underline;
+        }
+
+        .line-h {
+            font-size: 12px;
+            position: relative;
+            top: -5px;
+        }
+
+        .sign-btn {
+            font-size: 16px;
+            width: 280px;
+            height: 45px;
+            background-color: rgb(59, 124, 235);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .sns-link {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .sns-link a:hover {
+            color: #0000EE;
+        }
+
+        ins {
+            font-weight: 500;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="sign-up">
+        <p>지금 가입하시면</p>
+        <p><strong>웰컴쿠폰을 드려요!</strong></p>
+        <div class="close-btn">&times;</div>
+
+        <br>
+
+        <div class="menu">
+            <div class="log">로그인</div>
+            <div class="sign"><strong>회원가입</strong></div>
+        </div>
+
+        <form>
+            <label for="email" class="emailf">이메일</label>
+            <input type="email" id="email" placeholder="이메일을 입력해주세요.">
+
+            <label for="name">이름 / 업체명</label>
+            <input type="text" id="name" placeholder="2자 이상 20자 이하">
+
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" placeholder="영문 숫자 특수문자 조합 6-16자리">
+
+            <label for="pw-check">비밀번호 확인</label>
+            <input type="password" id="pw-check" placeholder="비밀번호를 다시 입력해주세요">
+
+            <div class="agree">
+                <input type="checkbox" id="agree-check"></input>
+                <label for="agree-check" class="line-h">
+                    <span><ins>개인정보수집이용안내</ins> 및 </span>
+                    <span><ins>약관</ins>에 동의 합니다.</span>
+                </label>
+            </div>
+
+            <button type="submit" class="sign-btn">회원 가입하기</button>
+
+            <div class="sns-link">
+                <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/" target="_blank">SNS로
+                    간편하게 가입하기</a>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
