@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 700px;
+            height: 500px;
+            /* border: 1px solid black; */
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+        .main {
+            background-color: red;
+            width: 200px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            color: white;
+        }
+
+        .page {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin-left: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .body {
+            background-color: orange;
+            width: 500px;
+            height: 300px;
+            float: left;
+            
+        }
+
+        .side {
+            background-color: green;
+            width: 200px;
+            height: 300px;
+            margin-left: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .footer {
+            background-color: blue;
+            width: 700px;
+            height: 100px;
+            color: white;
+            margin-left: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            margin: 0 auto;
+        }
+
+        .box1 {
+            float: left;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .box2 {
+            float: left;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .box3 {
+            float: left;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .box4 {
+            float: left;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .box5 {
+            float: left;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .box6 {
+            float: left;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main">메인메뉴</div>
+        <div class="page">마이페이지</div>
+        <div class="body">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+        </div>
+        <div class="side">aside</div>
+        <div class="footer">footer</div>
+    </div>
+
+
+</body>
+
+</html>
