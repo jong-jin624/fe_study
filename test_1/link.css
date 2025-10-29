@@ -1,0 +1,115 @@
+.container {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(11, 87, 55);
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin-top: 50px;
+}
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(11, 87, 55);
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin-top: 50px;
+}
+
+.choose {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    background-color: rgb(64, 78, 68);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.sign {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.log {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+input {
+    /* opacity: 0.1; */
+    background-color: rgb(11, 87, 55);
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+
+
+.btn {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(221, 204, 204);
+    background-color: rgb(95, 209, 129);
+    border: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(221, 204, 204);
+}
+
+.Welcome {
+    color: rgb(221, 204, 204);
+    font-size: 30px;
+    background-color: rgb(62, 167, 93);
+    width: 500px;
+    height: 80px;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 30%;
+
+    animation-name: box-ani1;
+    animation-duration: 1s;
+    animation-delay: 1s;
+
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+
+}
+
+ @keyframes box-ani1 {
+            0% {
+                opacity: 0.2;
+            }
+            50% {
+                opacity: 0.6;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }

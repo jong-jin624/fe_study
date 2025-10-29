@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .log {
+            background-color: rgb(95, 209, 129);
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(221, 204, 204);
+            margin: 20px;
+            font-weight: 400;
+        }
+    </style>
+
+    <link rel="stylesheet" href="link.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="choose">
+            <div class="sign"><a href="signup.html">Sign Up</a></div>
+            <div class="log"><a href="login.html">Log in</a></div>
+        </div>
+
+        <h1>Welcome Back!</h1>
+
+        <form action="finish.html">
+            <label><input type="email" placeholder="Email Address" required></label><br>
+            <label><input type="password" placeholder="Password" required></label><br><br>
+
+            <button type="submit" class="btn">LOG IN</button>
+        </form>
+    </div>
+</body>
+
+</html>
